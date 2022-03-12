@@ -1,7 +1,7 @@
 :root
 {
-  --bg-color-dark: #414141;
-  --bg-color-light: #eb3232;
+  --bg-color-dark: #46526b;
+  --bg-color-light: #ebf8fc;
 }
 
 html
@@ -28,4 +28,9 @@ body
 .light-mode
 {
   background-color: var(--bg-color-light);
+}
+
+img
+{
+  margin: 1.7rem;
 }
