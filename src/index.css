@@ -1,7 +1,7 @@
 :root
 {
   --bg-color-dark: #46526b;
-  --bg-color-light: #ebf8fc;
+  --bg-color-light: #cde8f0;
 }
 
 html
@@ -30,7 +30,15 @@ body
   background-color: var(--bg-color-light);
 }
 
+.setTheme
+{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 3;
+}
+
 img
 {
-  margin: 1.7rem;
+  margin: 0.5rem;
 }
