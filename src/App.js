@@ -8,12 +8,12 @@ import { Button } from 'react-bootstrap';
 function App() {
   const [darcMode, setDarkMode] = useState(false);
   return (
-    <div className={darcMode ? 'dark-mode': 'light-mode'}>
-      <Menu theme={darcMode}/>
+    <div className={darcMode ? 'dark-mode' : 'light-mode'}>
+      <Menu theme={darcMode} />
       <div className="container">
         <div className="setTheme">
-          <Button onClick={() => {setDarkMode(!darcMode)}} variant={darcMode ? "dark": "light"} size='lg' >
-            <FontAwesomeIcon icon={faSun}/>
+          <Button onClick={() => { setDarkMode(!darcMode) }} variant={darcMode ? "dark" : "light"} size='lg' >
+            <FontAwesomeIcon icon={faSun} />
           </Button>
         </div>
       </div>

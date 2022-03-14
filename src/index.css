@@ -30,6 +30,17 @@ body
   background-color: var(--bg-color-light);
 }
 
+.dark-mode-bar
+{
+  background-color: #212529;
+}
+
+.light-mode-bar
+{
+  background-color: #F8F9FA;
+  
+}
+
 .setTheme
 {
   position: fixed;
@@ -40,5 +51,11 @@ body
 
 img
 {
-  margin: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.nav-link
+{
+  font-size: 1.3rem;
+  color: #2A7FFF !important;
 }
