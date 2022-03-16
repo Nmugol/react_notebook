@@ -5,8 +5,8 @@
   --text-dark: #0c131b;
   --text-light: #f0f7ff;
   --shadow: #171922a1;
-  --card-bg1: #68748f;
-  --card-bg2: #a9c6d0;
+  --card-bg1: #212529;
+  --card-bg2: #F8F9FA;
 }
 
 .dark-mode
@@ -32,12 +32,11 @@ body
 {
   margin:0;
   padding: 0;
+  min-width: 400px;
 }
 
 .background
 {
-  height: 100vh;
-  background-color: var(--bg);
   color: var(--text);
 }
 
@@ -66,12 +65,63 @@ body
 .homeCard
 {
   background-color: var(--card);
-  width: 18rem;
-  height: 30rem;
-  margin: 3rem;
+  margin: 1.2rem;
   border-radius: 0.6rem;
+  min-width: 12rem;
+  padding: 0.4rem;
 
   box-shadow: 0px 0px 11px -1px var(--shadow);
   -webkit-box-shadow: 0px 0px 11px -1px var(--shadow);
   -moz-box-shadow: 0px 0px 11px -1px var(--shadow);
+}
+
+.note
+  {
+    display: grid;
+    justify-content: center;
+  }
+
+@media (min-width: 480px) {
+  .note
+  {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .note
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .note
+  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .note
+  {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.view
+{
+  margin-bottom: 1rem;
+}
+
+
+.title
+{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.book
+{
+  font-size: 1.1rem;
 }

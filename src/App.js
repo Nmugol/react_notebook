@@ -9,9 +9,10 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [darcMode, setDarkMode] = useState(false);
+
   return (
     <div className={(darcMode ? 'dark-mode' : 'light-mode') + ' background'}>
-
+      <style>{"body { background-color:" + (darcMode ? '#46526b' : '#cde8f0') + "; }"}</style>
       <Menu theme={darcMode} />
       <div className="container">
         <div className="setTheme">
