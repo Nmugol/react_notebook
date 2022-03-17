@@ -5,7 +5,7 @@ const NoteCard = props => {
     let book = props.book;
 
     return (
-        <div className={(darcMode ? 'dark-mode' : 'light-mode') + ' homeCard'}>
+        <div className={(darcMode ? 'dark-mode' : 'light-mode') + ' noteCard'}>
             <div className="view">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est commodi debitis. Id sint eius blanditiis reprehenderit veniam ipsum.
             </div>

@@ -2,6 +2,8 @@
 {
   --bg-dark: #46526b;
   --bg-light: #cde8f0;
+  --akcen-color1: #43474b;
+  --akcen-color2: #abc6d0;
   --text-dark: #0c131b;
   --text-light: #f0f7ff;
   --shadow: #171922a1;
@@ -14,6 +16,7 @@
   --bg: var(--bg-dark);
   --text: var(--text-light);
   --card:var(--card-bg1);
+  --akcent: var(--akcen-color1);
 }
 
 .light-mode
@@ -21,6 +24,7 @@
   --bg:var(--bg-light);
   --text:var(--text-dark);
   --card:var(--card-bg2);
+  --akcent: var(--akcen-color2);
 }
 
 html
@@ -62,7 +66,7 @@ body
   font-weight: 500;
 }
 
-.homeCard
+.noteCard
 {
   background-color: var(--card);
   margin: 1.2rem;
@@ -124,4 +128,19 @@ body
 .book
 {
   font-size: 1.1rem;
+}
+
+.addNote
+{
+  text-align: center;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  display: table;
+}
+
+.addNote--text
+{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }

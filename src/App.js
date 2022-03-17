@@ -6,6 +6,7 @@ import Menu from './Component/Navbar';
 import About from "./Component/About";
 import Home from "./Component/Home";
 import { Routes, Route } from "react-router-dom";
+import Note from './Component/Note';
 
 function App() {
   const [darcMode, setDarkMode] = useState(false);
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/" element={<Home theme={darcMode} />} />
+            <Route path='/new-note' element={<Note></Note>}/>
           </Routes>
         </div>
       </div>
