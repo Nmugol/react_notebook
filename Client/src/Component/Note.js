@@ -20,7 +20,7 @@ const Note = props => {
             </div>
             <Editor
                 onInit={(evt, editor) => editorRef.current = editor}
-                initialValue="<p>This is the initial content of the editor.</p>"
+                initialValue=""
                 init={{
                     height: 500,
                     menubar: false,
@@ -35,7 +35,9 @@ const Note = props => {
                     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px}'
                 }}
             />
-            <button onClick={log}>Log editor content</button>
+
+
+            <button onClick={log}>Pobieranie tekstu</button>
         </div>
     );
 }
