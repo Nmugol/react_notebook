@@ -144,3 +144,25 @@ body
   text-align: center;
   vertical-align: middle;
 }
+
+.editNode
+{
+  display: grid;
+  gap: 0.3rem;
+}
+
+.inputNode
+{
+  width: 100%;
+  background-color: var(--card);
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  color: var(--text);
+}
+
+.TextEditor
+{
+  background-color: #333;
+}

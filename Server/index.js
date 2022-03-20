@@ -6,16 +6,16 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database:'Notebook'
+    database: 'Notebook'
 });
 
-db.connect(function(err){
-    if(err) throw err;
+db.connect(function (err) {
+    if (err) throw err;
     console.log("Connecter!");
-    let sql = "INSERT INTO notatki (temat, tresc) VALUES ('test','test')";
-    db.query(sql,function(err, result){
-        if(err) throw err;
-        console.log("Result:"+result);
+    let sql = "SELECT * FROM notatki";
+    db.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log(result);
     });
 });
 

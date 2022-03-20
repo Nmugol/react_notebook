@@ -25,7 +25,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/" element={<Home theme={darcMode} />} />
-            <Route path='/new-note' element={<Note></Note>}/>
+            <Route path='/new-note' element={<Note theme={darcMode} />} />
           </Routes>
         </div>
       </div>
