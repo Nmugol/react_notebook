@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IACA;EACI,gBAAgB,ECJT,OAAO",
+"sources": ["../Scss/index.scss","../Scss/Components/variable.scss"],
+"names": [],
+"file": "index.css"
+}
